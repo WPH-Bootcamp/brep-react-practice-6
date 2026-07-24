@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1 - Pseudo-Class Utilities</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <h1>Materi 1 - Pseudo-Class Utilities</h1>
+    <h2>1. Hover</h2>
+    <button
+      class="bg-blue-500 hover:bg-blue-900 w-25 h-10 text-white rounded-3xl transition duration-300"
+    >
+      Klik Saya
+    </button>
+
+    <h2>2. Focus</h2>
+    <input
+      type="text"
+      class="focus:outline-none focus:ring-2 focus:ring-red-500 border px-3 rounded-3xl"
+    />
+
+    <h2>3. Active</h2>
+    <button
+      class="bg-blue-500 hover:bg-blue-900 w-25 h-10 text-white rounded-3xl transition duration-300 active:bg-red-500"
+    >
+      Klik Saya
+    </button>
+
+    <h2>4. Disabled</h2>
+    <button
+      class="w-25 h-10 text-white rounded-3xl transition duration-300 bg-red-400 disabled:opacity-50"
+      disabled
+    >
+      Klik Saya
+    </button>
+
+    <h2>5. First dan Last</h2>
+    <ul class="bg-white p-4 rounded">
+      <li class="py-2 first:bg-red-500">Item 1</li>
+
+      <li class="py-2">Item 2</li>
+
+      <li class="py-2 last:bg-blue-500">Item 3</li>
+    </ul>
+  </body>
+</html>
