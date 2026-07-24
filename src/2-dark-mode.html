@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="" id="root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 2 - Dark Mode</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="dark:bg-black dark:text-white">
+    <h1>Materi 2 - Dark Mode</h1>
+
+    <button
+      class="bg-black dark:bg-white dark:text-black w-25 h-10 text-white rounded-3xl transition duration-300"
+      id="themeBtn"
+    >
+      Theme
+    </button>
+
+    <script>
+      const htmlRoot = document.getElementById('root');
+      const themeBtn = document.getElementById('themeBtn');
+
+      themeBtn.addEventListener('click', () => {
+        htmlRoot.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
